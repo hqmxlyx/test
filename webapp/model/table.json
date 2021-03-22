@@ -1,0 +1,15 @@
+{
+	"rows": [{
+		"field1": 1,
+		"field2": "张三",
+		"field3": "男"
+	}, {
+		"field1": 2,
+		"field2": "小花",
+		"field3": "女"
+	}, {
+		"field1": 1,
+		"field2": "小明",
+		"field3": "男"
+	}]
+}

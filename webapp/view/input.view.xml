@@ -1,0 +1,57 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml"
+	controllerName="testtest.controller.input">
+	<App>
+		<pages>
+			<Page title="Title">
+				<content>
+					<List noDataText="Drop list items here" id="__list0">
+						<items>
+							<InputListItem label="Switch">
+								<Switch state="true"/>
+							</InputListItem>
+						</items>
+						<InputListItem label="CheckBox">
+							<CheckBox selected="true"/>
+						</InputListItem>
+						<InputListItem label="RadioButton">
+							<!--<RadioButtonGroup select="onRadioSelectChange">-->
+								<RadioButton groupName="GroupInputListItem" select="onRadioSelectChange" text="女"/>
+								<RadioButton groupName="GroupInputListItem" select="onRadioSelectChange" text="男"/>
+							<!--</RadioButtonGroup>-->
+						</InputListItem>
+						<InputListitem label="Price Input">
+							<Input type="Number" value="11.12" placeholder="Price" width="auto"/>
+						</InputListitem>
+						<InputListitem label="Address Input">
+							<Input value="北京市 海淀区" placeholder="Address" width="auto"/>
+						</InputListitem>
+						<InputListitem label="Address Select input">
+							<Select change="onSelectChange">
+								<core:Item key="1" text="北京"/>
+								<core:Item key="1" text="上海"/>
+								<core:Item key="3" text="南京"/>
+							</Select>
+						</InputListitem>
+						<InputListitem label="Slider">
+							<Slider xmlns="sap.m" min="0" max="10" value="7" width="200px"/>
+						</InputListitem>
+						<InputListItem label="Date">
+							<Input type="Date"/>
+						</InputListItem>
+						<InputListItem label="Time">
+							<DateTimeInput type="Time"/>
+						</InputListItem>
+						<InputListItem label="DateTime">
+							<DateTimeInput type="DateTime"/>
+						</InputListItem>
+						<InputListItem label="StepInput">
+							<StepInput value="10" displayValuePrecision="1" min="1" max="12" width="auto" step="{step}" largerStep="{largerStep}" stepMode="{stepMode}"
+								valueState="{valueState}" enabled="true" editable="true" description="description" fieldWidth="{fieldWidth}" textAlign="{textAlign}"
+								validationMode="{validationMode}" change="onChange"/>
+						</InputListItem>
+					</List>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

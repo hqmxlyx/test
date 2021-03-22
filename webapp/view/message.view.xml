@@ -1,0 +1,17 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="testtest.controller.message" displayBlock="true">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+				    <Button text="Alert" width="100px" id="__button0" press="onClickAlert"/>
+				    <Button text="confirm" width="100px" id="__button1" press="onClickConfirm"/>
+				    <Button text="information" width="100px" id="__button2" press="onClickInformation"/>
+				    <Button text="success" width="100px" id="__button3" press="onClickSuccess"/>
+				    <Button text="error" width="100px" id="__button4" press="onClickError"/>
+				    <Button text="warning" width="100px" id="__button5" press="onClickWarning"/>
+				     <Button text="toast" width="100px" id="__button6" press="onClickToast"/>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

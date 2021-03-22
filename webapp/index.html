@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="UTF-8">
+		<title>test</title>
+		<script id="sap-ui-bootstrap"
+			src="../../resources/sap-ui-core.js"
+			data-sap-ui-libs="sap.m"
+			data-sap-ui-theme="sap_belize"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-resourceroots='{"testtest": ""}'>
+		</script>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<script>
+			//SAPUI 是通过这个页面启动的。
+			//加载控件容器，将manifest.json 中的rootview试图放入容器中
+			sap.ui.getCore().attachInit(function() {
+				new sap.m.Shell({
+					app: new sap.ui.core.ComponentContainer({
+						height : "100%",
+						name : "testtest",
+					})
+				}).placeAt("content");
+			});
+		</script>
+	</head>
+
+	<body class="sapUiBody" id="content">
+	</body>
+
+</html>

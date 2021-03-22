@@ -1,0 +1,46 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="testtest.controller.Dialog">
+	<App>
+		<pages>
+			<Page title="Title">
+				<content>
+					<VBox width="100%" direction="Column" id="__vbox0" alignContent="Center">
+						<items>
+							<Button xmlns="sap.m" press="onListDialog" width="auto" text="ListDialog"/>
+							<Button xmlns="sap.m" press="onMsgDialog" width="auto" text="MessageDialog"/>
+							<Button xmlns="sap.m" press="onTableDialog" width="auto" text="TableDialog"/>
+						</items>
+					</VBox>
+					<List items="{path:'/rows'}">
+						<items>
+							<StandardListItem title="{field2}" counter="{field1}"/>
+						</items>
+					</List>
+					<Table  noDataText="Drop column list items here and columns in the area above" id="__table0">
+					    <items>
+					        <ColumnListItem id="__item1">
+					            <cells>
+					                <Text text="Row 1 Cell 1" id="__text0"/>
+					                <Text text="Row 1 Cell 2" id="__text1"/>
+					                <Text text="Row 1 Cell 3" id="__text2"/></cells>
+					        </ColumnListItem></items>
+					    <columns>
+					        <Column id="__column0">
+					            <header>
+					                <Label text="Header 1" id="__label0"/>
+					            </header>
+					        </Column>
+					        <Column id="__column1">
+					            <header>
+					                <Label text="Header 2" id="__label1"/>
+					            </header>
+					        </Column>
+					        <Column id="__column2">
+					            <header>
+					                <Label text="Header 3" id="__label2"/>
+					            </header>
+					        </Column></columns></Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

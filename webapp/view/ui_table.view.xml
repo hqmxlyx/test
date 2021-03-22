@@ -1,0 +1,31 @@
+<mvc:View xmlns:core="sap.ui.core" controllerName="testtest.controller.ui_table" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:t="sap.ui.table">
+	<App>
+		<Page title="{i18n>supplier}">
+			<content>
+				<t:Table width="100%" title="{i18n>supplierlist}" visibleRowCount="2" firstVisibleRow="0" editable="false" selectionMode="Single" rows="{/Suppliers}">
+					<t:columns>
+						<t:Column sortProperty="ID" >
+							<Label text="ID"/>
+							<t:template>
+								<Text text="{ID}"/>
+							</t:template>
+						</t:Column>
+						<t:Column label="Name" sortProperty="Name" >
+							<Label text="Name"/>
+							<t:template>
+								<Text text="{Name}"/>
+							</t:template>
+						</t:Column>
+						<t:Column label="Address" sortProperty="Address">
+							<Label text="Address"/>
+							<t:template>
+								<Text text="{Address}"/>
+							</t:template>
+						</t:Column>
+					</t:columns>
+				</t:Table>
+			</content>
+		</Page>
+	</App>
+</mvc:View>
