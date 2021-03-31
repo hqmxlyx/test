@@ -17,7 +17,7 @@
     {
       "templateId": "ui5template.basicSAPUI5ApplicationComponent",
       "templateVersion": "1.4.0",
-      "dateTimeStamp": "Mon, 22 Mar 2021 02:02:48 GMT"
+      "dateTimeStamp": "Wed, 31 Mar 2021 02:44:38 GMT"
     },
     {
       "templateId": "servicecatalog.connectivityComponent",
@@ -57,5 +57,10 @@
     "loadJSONFiles": false,
     "loadCustomRequests": false,
     "mockRequestsFilePath": ""
+  },
+  "dataBinding": {
+    "/webapp/view/SmartTable.view.xml": {
+      "entitySet": "/EmployeeCollection"
+    }
   }
 }

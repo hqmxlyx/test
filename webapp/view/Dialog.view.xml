@@ -15,9 +15,9 @@
 							<StandardListItem title="{field2}" counter="{field1}"/>
 						</items>
 					</List>
-					<Table  noDataText="Drop column list items here and columns in the area above" id="__table0">
+					<Table noDataText="Drop column list items here and columns in the area above" id="__table0">
 					    <items>
-					        <ColumnListItem id="__item1">
+					        <ColumnListItem id="__item1" >
 					            <cells>
 					                <Text text="Row 1 Cell 1" id="__text0"/>
 					                <Text text="Row 1 Cell 2" id="__text1"/>

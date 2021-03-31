@@ -50,7 +50,7 @@
 	},
 	"sap.ui5": {
 		"rootView": {
-			"viewName": "testtest.view.Dialog",
+			"viewName": "testtest.view.SmartTable2",
 			"type": "XML"
 		},
 		"dependencies": {
@@ -92,11 +92,9 @@
 			}
 		},
 		"resources": {
-			"css": [
-				{
-					"uri": "css/style.css"
-				}
-			]
+			"css": [{
+				"uri": "css/style.css"
+			}]
 		}
 	}
 }

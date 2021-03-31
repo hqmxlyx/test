@@ -1,0 +1,35 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:smartTable="sap.ui.comp.smarttable" controllerName="testtest.controller.SmartTable2"
+	xmlns="sap.m" xmlns:core="sap.ui.core">
+	<smartTable:SmartTable id="tblUserData" entitySet="EmployeeCollection" tableType="ResponsiveTable" useExportToExcel="true"
+		useVariantManagement="true" showVariantManagement="true" persistencyKey="SmartTableAnalytical_Explored"
+		class="sapUiResponsiveContentPadding" useTablePersonalisation="true" showTablePersonalisation="true" smartFilterId="smartFilterBar"
+		initiallyVisibleFields="Empid,Empname,Empaddr" header="Employees" enableAutoBinding="true">
+		<smartTable:customToolbar>
+			<OverflowToolbar design="Transparent">
+				<ToolbarSpacer/>
+				<Button type="Transparent" id="btnMultiEdit" text="Edit Multiple" enabled="false" press="onOpenMultiEdit"/>
+			</OverflowToolbar>
+		</smartTable:customToolbar>
+		<!--下面是加入客户之定义字段-->
+		<Table>
+			<columns>
+				<Column >
+					<!--定义数据和显示在那一列上-->
+					<customData>
+						<!--不加入该属性设置里面的都不能用了"columnKey": "Empid"-->
+						<!--<core:CustomData key="p13nData" value='\{"columnKey": "Empid", "columnIndex": 3, "leadingProperty": "Empid" \}'/>-->
+						<core:CustomData key="p13nData" value='\{"columnKey": "Empid", "columnIndex": 3 \}'/>
+					</customData>
+					<Text text="客户自定义字段"/>
+				</Column>
+			</columns>
+			<items>
+				<ColumnListItem>
+					<cells>
+						<ObjectIdentifier title="{Empid}" text="{Empname}"/>
+					</cells>
+				</ColumnListItem>
+			</items>
+		</Table>
+	</smartTable:SmartTable>
+</mvc:View>

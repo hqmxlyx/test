@@ -1,0 +1,32 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form"
+	xmlns:html="http://www.w3.org/1999/xhtml" controllerName="testtest.controller.SimpleForm">
+	<App>
+		<pages>
+			<Page title="Title">
+				<content>
+					<f:SimpleForm id="SimpleFormDisplay354" editable="false" layout="ResponsiveGridLayout" title="Address" labelSpanXL="5" labelSpanL="5"
+						labelSpanM="5" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="5" columnsXL="2"
+						columnsL="2" columnsM="2" singleContainerFullSize="false">
+						<f:content>
+							<Label text="Name"/>
+							<Text id="nameText" text="SupplierName"/>
+							<Label text="Street/No."/>
+							<Text text="Street HouseNumber"/>
+							<Label text="ZIPCode/City"/>
+							<Text text="ZIPCode City"/>
+							<Label text="Country"/>
+							<Text id="countryText" text="Country"/>
+						</f:content>
+					</f:SimpleForm>
+					<List noDataText="Drop list items here" id="__list1" itemPress="onItemPress">
+						<items>
+							<StandradListItem type="Navigation" title="List Item 1" counter="3" description="Description text" icon="sap-icon://picture"/>
+							<StandradListItem type="Navigation" title="List Item 2" description="Description text" icon="sap-icon://picture" id="__item4"/>
+							<StandradListItem type="Navigation" title="List Item 3" description="Description text" icon="sap-icon://picture" id="__item5"/>
+						</items>
+					</List>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

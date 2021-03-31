@@ -24,7 +24,6 @@ sap.ui.define([
 			this.getView().setModel(oModel);
 		},
 		onListDialog: function(oEvent) {
-
 			if (!this.ListDialog) {
 				this.ListDialog = new Dialog({
 					title: "List Dialog",
@@ -53,10 +52,10 @@ sap.ui.define([
 				});
 
 				// to get access to the controller's model
-				this.getView().addDependent(this.oDefaultDialog);
+				this.getView().addDependent(this.ListDialog);
 			}
 
-			this.oDefaultDialog.open();
+			this.ListDialog.open();
 		},
 
 		onMsgDialog: function(oEvent) {

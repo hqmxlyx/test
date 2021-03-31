@@ -1,0 +1,72 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="testtest.controller.layout">
+	<App>
+		<pages>
+			<Page title="Title">
+				<content>
+					<FlexBox width="100%" id="__box1">
+						<items>
+							<Button text="Button" width="100px" id="__button0"/>
+							<Button text="Button" width="100px" id="__button1"/>
+							<Button text="Button" width="100px" id="__button2"/>
+							<Button text="Button" width="100px" id="__button4"/>
+							<Button text="Button" width="100px" id="__button3"/>
+						</items>
+					</FlexBox>
+					<sap.ui.layout:HorizontalLayout xmlns:sap.ui.layout="sap.ui.layout" id="__layout1">
+						<sap.ui.layout:content>
+							<Button text="Button" width="100px" id="__button8"/>
+							<Button text="Button" width="100px" id="__button9"/>
+							<Button text="Button" width="100px" id="__button7"/>
+							<Button text="Button" width="100px" id="__button10"/>
+							<Button text="Button" width="100px" id="__button11"/>
+							<Button text="Button" width="100px" id="__button12"/>
+						</sap.ui.layout:content>
+					</sap.ui.layout:HorizontalLayout>
+					<HBox width="100%" id="__hbox0">
+						<items>
+							<Button text="Button" width="100px" id="__button5"/>
+							<Button text="Button" width="100px" id="__button16"/>
+							<Button text="Button" width="100px" id="__button15"/>
+							<Button text="Button" width="100px" id="__button6"/>
+							<Button text="Button" width="100px" id="__button13"/>
+							<Button text="Button" width="100px" id="__button14"/>
+						</items>
+					</HBox>
+					<sap.ui.layout:VerticalLayout xmlns:sap.ui.layout="sap.ui.layout" width="100%" id="__layout0">
+						<sap.ui.layout:content>
+							<Button text="Button" width="100px" id="__button17"/>
+							<Button text="Button" width="100px" id="__button20"/>
+							<Button text="Button" width="100px" id="__button18"/>
+						</sap.ui.layout:content>
+					</sap.ui.layout:VerticalLayout>
+					<sap.ui.layout:VerticalLayout xmlns:sap.ui.layout="sap.ui.layout" width="100%" id="__layout2">
+						<sap.ui.layout:content>
+							<Button text="Button" width="100px" id="__button23"/>
+						</sap.ui.layout:content>
+					</sap.ui.layout:VerticalLayout>
+					<sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" id="__form0">
+						<sap.ui.layout.form:FormContainer title="Title" id="__container0">
+							<sap.ui.layout.form:FormElement label="Label" id="__element0">
+								<sap.ui.layout.form:fields>
+									<Input width="auto" id="__input0"/>
+									<Label text="Label" width="100%" id="__label2"/>
+									<Input width="auto" id="__input2"/>
+									<Label text="Label" width="100%" id="__label3"/>
+									<Input width="auto" id="__input3"/>
+								</sap.ui.layout.form:fields>
+							</sap.ui.layout.form:FormElement>
+							<sap.ui.layout.form:FormElement xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout.form="sap.ui.layout.form" label="Label" id="__element0_copy">
+								<sap.ui.layout.form:fields>
+									<Input xmlns="sap.m" width="100%" id="__input0_copy"/>
+								</sap.ui.layout.form:fields>
+							</sap.ui.layout.form:FormElement>
+						</sap.ui.layout.form:FormContainer>
+						<sap.ui.layout.form:layout>
+							<sap.ui.layout.form:ResponsiveGridLayout id="__layout3"/>
+						</sap.ui.layout.form:layout>
+					</sap.ui.layout.form:Form>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
