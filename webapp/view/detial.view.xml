@@ -1,10 +1,5 @@
-<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="testtest_a.controller.controller.detial"
-	xmlns:html="http://www.w3.org/1999/xhtml">
-	<App>
-		<pages>
-			<Page title="Title">
-				<content></content>
-			</Page>
-		</pages>
-	</App>
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" >
+	<Page id="detail" title="qweqweqwe" showNavButton="true" navButtonPress="onNavPress" >
+		<Button id="detailBut" text="button"/>
+	</Page>
 </mvc:View>

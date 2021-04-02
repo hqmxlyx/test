@@ -25,6 +25,14 @@
 			"table": {
 				"uri": "./model/table.json",
 				"type": "JSON"
+			},
+			"ZEMP3_SRV": {
+				"uri": "/sap/opu/odata/sap/ZEMP3_SRV/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0",
+					"localUri": "localService/ZEMP3_SRV/metadata.xml"
+				}
 			}
 		}
 	},
@@ -50,7 +58,7 @@
 	},
 	"sap.ui5": {
 		"rootView": {
-			"viewName": "testtest.view.SmartTable2",
+			"viewName": "testtest.view.master",
 			"type": "XML"
 		},
 		"dependencies": {
@@ -92,9 +100,11 @@
 			}
 		},
 		"resources": {
-			"css": [{
-				"uri": "css/style.css"
-			}]
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
 		}
 	}
 }

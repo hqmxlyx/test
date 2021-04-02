@@ -1,9 +1,11 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
-	"sap/m/MessageBox"
+	"sap/m/MessageBox",
+	"sap/ui/core/mvc/XMLView",
+	"sap/m/Button"
 ], function(Controller) {
 	"use strict";
-
+	var oApp;
 	return Controller.extend("testtest.controller.master", {
 
 		/**
@@ -14,13 +16,36 @@ sap.ui.define([
 		onInit: function() {
 			var oModule = this.getOwnerComponent().getModel("zemployee");
 			this.getView().setModel(oModule);
-
+			oApp = this.byId("masterapp");
 		},
 		onPressNavigation: function(oEvent) {
-			sap.m.MessageBox.alert("asdfad");
-			var app = this.getId("");
-			var detial = new sap.ui.XMLView();
-			app.to(detial);
+			var flay;
+			var oView = new sap.ui.core.mvc.XMLView({
+				viewName: "testtest.view.detial",
+				controllerName: "testtest.controller.master"
+			});
+			oView.byId("detailBut").attachPress(function(oEvFent) {
+				//oApp.back();
+				//oApp.addPage(this.byId("__list3"));
+				oApp.to(this.byId("__list3"));
+			//	flay = "X";
+			}.bind(this), this.listenButton());
+			oApp.addPage(oView);
+			var oContext = oEvent.getSource().getBindingContext();
+			oView.setBindingContext(oContext);
+			oApp.to(oView);
+			// var oContext = oEvent.getSource().getBindingContext();
+			//	 var oDetailPage = oApp.getPage("detial");
+			//	 oDetailPage.setBindingContext(oContext);
+
+		},
+		onNavPress: function() {
+		
+			oApp.back();
+		},
+		listenButton: function() {
+			sap.m.MessageBox.alert("asdasdf");
+			//	this.byId("masterapp").to(this.byId("__list3"));
 		}
 
 		/**

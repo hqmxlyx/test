@@ -17,12 +17,12 @@
     {
       "templateId": "ui5template.basicSAPUI5ApplicationComponent",
       "templateVersion": "1.4.0",
-      "dateTimeStamp": "Wed, 31 Mar 2021 02:44:38 GMT"
+      "dateTimeStamp": "Fri, 02 Apr 2021 02:22:26 GMT"
     },
     {
       "templateId": "servicecatalog.connectivityComponent",
       "templateVersion": "0.0.0",
-      "dateTimeStamp": "Wed, 10 Mar 2021 11:29:55 GMT"
+      "dateTimeStamp": "Fri, 02 Apr 2021 02:37:39 GMT"
     }
   ],
   "translation": {
@@ -52,7 +52,7 @@
     "excludedFiles": []
   },
   "mockpreview": {
-    "mockUri": "/sap/opu/odata/sap/ZEMPPRO_SRV/",
+    "mockUri": "/sap/opu/odata/sap/ZEMP3_SRV",
     "metadataFilePath": "localService/metadata.xml",
     "loadJSONFiles": false,
     "loadCustomRequests": false,
