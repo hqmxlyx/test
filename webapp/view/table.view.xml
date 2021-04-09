@@ -1,12 +1,11 @@
-<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml"
-	controllerName="testtest.controller.table">
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="testtest.controller.table">
 	<App>
 		<pages>
 			<Page title="Title">
 				<content>
 					<Table noDataText="Drop column list items here and columns in the area above" id="__table0" items="{/rows}">
 						<items>
-							<ColumnListItem id="__item0">
+							<ColumnListItem id="__item0" >
 								<cells>
 									<Text text="{field1}" id="__text3"/>
 									<Text text="{field2}" id="__text4"/>
@@ -33,7 +32,7 @@
 					</Table>
 					<List noDataText="Drop list items here" id="__list1" items="{Emp>/EmployeeCollection}">
 						<items>
-							<StandardListItem type="Navigation" title="{Emp>Empid}" description="{Emp>Empname}" icon="sap-icon://picture" id="__item4"/></items>
+							<StandardListItem type="Navigation" title="{Emp>Empid}" description="{Emp>Empname}" icon="sap-icon://picture" id="__item4" /></items>
 					</List>
 				</content>
 			</Page>

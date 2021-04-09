@@ -2,14 +2,35 @@
 	"rows": [{
 		"field1": 1,
 		"field2": "张三",
-		"field3": "男"
+		"field3": "男",
+		"table": [{
+			"id": "tab1",
+			"name": "tab1_name1"
+		}, {
+			"id": "tab1",
+			"name": "tab1_name2"
+		}]
 	}, {
 		"field1": 2,
 		"field2": "小花",
-		"field3": "女"
+		"field3": "女",
+		"table": [{
+			"id": "tab2",
+			"name": "tab2_name1"
+		}, {
+			"id": "tab2",
+			"name": "tab2_name2"
+		}]
 	}, {
-		"field1": 1,
+		"field1": 3,
 		"field2": "小明",
-		"field3": "男"
+		"field3": "男",
+		"table": [{
+			"id": "tab3",
+			"name": "tab3_name1"
+		}, {
+			"id": "tab3",
+			"name": "tab3_name2"
+		}]
 	}]
 }

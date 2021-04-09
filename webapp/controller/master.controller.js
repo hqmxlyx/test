@@ -14,33 +14,38 @@ sap.ui.define([
 		 * @memberOf testtest.view.master
 		 */
 		onInit: function() {
-			var oModule = this.getOwnerComponent().getModel("zemployee");
+			var oModule = new sap.ui.model.json.JSONModel("model/table.json");
 			this.getView().setModel(oModule);
 			oApp = this.byId("masterapp");
+
 		},
+
 		onPressNavigation: function(oEvent) {
-			var flay;
 			var oView = new sap.ui.core.mvc.XMLView({
 				viewName: "testtest.view.detial",
 				controllerName: "testtest.controller.master"
 			});
-			oView.byId("detailBut").attachPress(function(oEvFent) {
-				//oApp.back();
-				//oApp.addPage(this.byId("__list3"));
-				oApp.to(this.byId("__list3"));
-			//	flay = "X";
-			}.bind(this), this.listenButton());
-			oApp.addPage(oView);
-			var oContext = oEvent.getSource().getBindingContext();
-			oView.setBindingContext(oContext);
-			oApp.to(oView);
-			// var oContext = oEvent.getSource().getBindingContext();
-			//	 var oDetailPage = oApp.getPage("detial");
-			//	 oDetailPage.setBindingContext(oContext);
 
+			var oPage = new sap.m.Page({
+				//不加ID每次都会给Page创建创建一个ID放入APP中
+				//	id: "page2",
+				title: "title",
+				content: [oView],
+				showNavButton: true,
+				navButtonPress: [this.onNavPress, this]
+			});
+
+			oApp.addPage(oPage);
+			oApp.to(oPage);
+			var oContext = oEvent.getSource().getBindingContext();
+			oPage.setBindingContext(oContext);
+
+			var table = oView.byId("__table0");
+			var path = oEvent.getSource().getBindingContextPath();
+			table.bindItems(path + "/table", oView.byId("__item0"));
 		},
+
 		onNavPress: function() {
-		
 			oApp.back();
 		},
 		listenButton: function() {

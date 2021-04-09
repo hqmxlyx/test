@@ -24,7 +24,7 @@
 				</Column>
 			</columns>
 			<items>
-				<ColumnListItem>
+				<ColumnListItem >
 					<cells>
 						<ObjectIdentifier title="{Empid}" text="{Empname}"/>
 					</cells>

@@ -1,5 +1,32 @@
-<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" >
-	<Page id="detail" title="qweqweqwe" showNavButton="true" navButtonPress="onNavPress" >
-		<Button id="detailBut" text="button"/>
-	</Page>
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Toolbar width="100%" id="__toolbar1">
+		<Text text="{field1}" id="__text1"/>
+		<Text text="{field2}" id="__text2"/>
+	</Toolbar>
+	<Table items="{path:'rows/1/table'}" noDataText="Drop column list items here and columns in the area above" id="__table0">
+		<items>
+			<ColumnListItem id="__item0">
+				<cells>
+					<Text text="{id}"/>
+					<Text text="{name}" id="__text5"/></cells>
+			</ColumnListItem>
+		</items>
+		<columns>
+			<Column id="__column0">
+				<header>
+					<Label text="Header 1" id="__label0"/>
+				</header>
+			</Column>
+			<Column id="__column1">
+				<header>
+					<Label text="Header 2" id="__label1"/>
+				</header>
+			</Column>
+			<Column id="__column2">
+				<header>
+					<Label text="Header 3" id="__label2"/>
+				</header>
+			</Column>
+		</columns>
+	</Table>
 </mvc:View>

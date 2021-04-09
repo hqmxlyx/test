@@ -58,7 +58,7 @@
 	},
 	"sap.ui5": {
 		"rootView": {
-			"viewName": "testtest.view.master",
+			"viewName": "testtest.view.SmartTable3",
 			"type": "XML"
 		},
 		"dependencies": {
