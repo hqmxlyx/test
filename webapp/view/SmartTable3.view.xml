@@ -1,11 +1,7 @@
-<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:smartTable="sap.ui.comp.smarttable" controllerName="testtest.controller.SmartTable3"
-	xmlns="sap.m" xmlns:core="sap.ui.core">
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:smartTable="sap.ui.comp.smarttable" xmlns="sap.m" xmlns:core="sap.ui.core" controllerName="testtest.controller.SmartTable3">
 	<App id="app">
 		<Page>
-			<smartTable:SmartTable id="tblUserData" entitySet="ZTHEAD" tableType="ResponsiveTable" useExportToExcel="true" useVariantManagement="true"
-				showVariantManagement="true" persistencyKey="SmartTableAnalytical_Explored" class="sapUiResponsiveContentPadding"
-				useTablePersonalisation="true" showTablePersonalisation="true" smartFilterId="smartFilterBar"
-				initiallyVisibleFields="Ebeln,Burks,Aedat,Lifnr,Bsart,Ekgr" header="Purchase Order List" enableAutoBinding="true">
+			<smartTable:SmartTable id="tblUserData" entitySet="ZTHEAD" tableType="ResponsiveTable" useExportToExcel="true" useVariantManagement="true" showVariantManagement="true" persistencyKey="SmartTableAnalytical_Explored" class="sapUiResponsiveContentPadding" useTablePersonalisation="true" showTablePersonalisation="true" smartFilterId="smartFilterBar" initiallyVisibleFields="Ebeln,Burks,Aedat,Lifnr,Bsart,Ekgr" header="Purchase Order List" enableAutoBinding="true">
 				<smartTable:customToolbar>
 					<OverflowToolbar design="Transparent">
 						<ToolbarSpacer/>
@@ -13,9 +9,9 @@
 						<Button text="button" press="onClick"/>
 					</OverflowToolbar>
 				</smartTable:customToolbar>
-				<Table> 
+				<Table growing="true" growingScrollToLoad="true"> 
 					<columns>
-						<Column >
+						<Column>
 							<!--定义数据和显示在那一列上-->
 							<!--<customData>-->
 							<!--不加入该属性设置里面的都不能用了"columnKey": "Empid"-->
